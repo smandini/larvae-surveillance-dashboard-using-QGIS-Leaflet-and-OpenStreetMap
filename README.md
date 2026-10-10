@@ -6,6 +6,7 @@
 1. QGIS (open source)
 2. Visual studio for web programming
 
+## QGIS 🗺️
 First of all, search for the city boundaries based on the city prefectures that you need from the government website (if you are too lazy to create them from scratch).
 
 _**This project used the subdistricts from the Balikpapan government website.**
@@ -45,6 +46,7 @@ Export each layer separately and save it as a GeoJSON file. After exporting, ope
 ```
 var your_file_name = {
 ```
+## Configuring the Dashboard 💻 
 ### Preparing your page ^_^
 The next part, begin with the introduce of Leaflet as open source JavaScript library for building powerful interactive maps. Please go to the Leaflet website for futher information, especially for [Using GeoJSON with Leaflet](https://leafletjs.com/examples/geojson/).
 
@@ -89,9 +91,52 @@ The result looks much better now, with colored subdistricts and a mouseover effe
 
 <img width="1847" height="867" alt="Screenshot 2026-10-10 194338" src="https://github.com/user-attachments/assets/4d755df4-aebb-441a-a4c4-c338b0e0efe7" />
 
-Next, let's edit the markers, buffer zones, and popups using the GeoJSON data stored in the JavaScript files we have uploaded. Popups are usually used when we want to attach some information to a particular object on a map. Here is the result:
+Next, let's edit the markers, buffer zones, and popups using the GeoJSON data stored in the JavaScript files we have uploaded. 
+Also let’s give our buffer zones different colors based on the larval density classification, so it’s easier to spot which areas have higher or lower larval density.
+Popups are usually used when we want to attach some information to a particular object on a map. Here is the result:
 
 <img width="1871" height="872" alt="Screenshot 2026-10-10 200617" src="https://github.com/user-attachments/assets/380bbb6a-fa43-45fe-9224-d5c18af93f13" />
+
+If you want to add Layer Groups and Layers Control on your Leaflet interactive maps, go on. Leaflet allows the users to control which layers they see on our map. Adding a map legend to help users understand the meaning of each buffer color and identify the corresponding larval density classification.
+The code of Layer Groups:
+```
+var rawanJentik =
+        L.layerGroup();
+    rawanJentik.addLayer(
+        bufferLarva
+    );
+    rawanJentik.addLayer(
+        titikLarva
+    );
+    rawanJentik.addTo(map);    
+```
+The code of a map Legend to explain the buffer color:
+```
+var legend =
+        L.control({
+            position:
+                "bottomright"
+        });
+
+    legend.onAdd =
+        function(map) {
+                style
+                style
+                style
+        }
+ return div;
+};
+legend.addTo(map);
+```
+Here is the final result: 
+<img width="1870" height="867" alt="Screenshot 2026-10-10 205224" src="https://github.com/user-attachments/assets/85eeddb4-aa1d-414b-bb74-3cebb790ee6c" />
+
+
+---------- I will work on the data visualization using a CSS framework. Just scroll down the page, and you will find some charts to make the data easier to explore ----------
+I still need to update the original dataset, so I am going to continue working on this part when I have more free time. No rush, we will get there ✨
+---------- Have a nice day from me always, xoxo ----------
+
+
 
 
 
