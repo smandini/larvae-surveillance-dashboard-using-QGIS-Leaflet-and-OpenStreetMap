@@ -19,4 +19,7 @@ After that, the coordinates layer is ready. How does it look after we add the co
 
 Furthermore, the buffer zone marks the area around each larvae breeding site where mosquitoes can spread, so health officers can target preventive actions like fogging, larvicide, and house inspections before cases appear. Thus we do need the buffer zone.
 
+Most of our layers use the WGS84 (EPSG:4326) coordinate system, whose unit is degrees, so the buffer distance could not be set in meters. To fix this, we reprojected the layers to UTM (EPSG:32750), which uses meters, so the buffer distance could be set accurately.
+
+<img width="1920" height="1080" alt="Portfolio SM (4)" src="https://github.com/user-attachments/assets/6423fb8d-9333-41aa-b01d-be5f0b954291" />
 
