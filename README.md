@@ -6,7 +6,7 @@
 1. QGIS (open source)
 2. Visual studio for web programming
 
-## QGIS 🗺️
+## Working with QGIS 🗺️
 First of all, search for the city boundaries based on the city subdistricts that you need from the government website (if you are too lazy to create them from scratch).
 
 _**This project used the subdistricts from the Balikpapan government website.**
