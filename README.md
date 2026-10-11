@@ -133,9 +133,7 @@ Here is the final result:
 
 
 ---------- I will work on the data visualization using a CSS framework. Just scroll down the page, and you will find some charts to make the data easier to explore ----------
-I still need to update the original dataset, so I am going to continue working on this part when I have more free time. No rush, we will get there ✨
----------- Have a nice day from me always, xoxo ----------
-
+I still need to update the original dataset, so I am going to continue working on this part when I have more free time. No rush, we will get there ✨ ----------
 
 
 
