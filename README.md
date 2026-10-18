@@ -64,7 +64,8 @@ var map = L.map('map').setView(
         12
     );
 ```
-The next step, we need to color the subdistricts. Also mmake the subdistricts highlighted visually in some way when they are hovered with a mouse. 
+The next step, we need to color the subdistricts. If you need map color schemes, go visit the ColorBrewer website and visit the [ColorBrewer repository on Github](https://github.com/axismaps/colorbrewer/).
+Also mmake the subdistricts highlighted visually in some way when they are hovered with a mouse. 
 ```
 // Mouseover
 layer.on(
